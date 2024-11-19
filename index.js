@@ -40,7 +40,7 @@ try {
 
 // defining routes
 app.use("/cloth", clothRoute);
-app.use("/user", userRoute);
+app.use("/user/login", userRoute);
 
 app.listen(PORT, () => {
     console.log(`Server is listening on port ${PORT}`);
