@@ -8,7 +8,12 @@ import userRoute from "./route/user.route.js";
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin: ['http://localhost:5174'], // Replace with your frontend URL
+    methods: 'GET, POST, PUT, DELETE',
+    credentials: true // Include this if cookies are involved
+  }));
+  
 app.use(express.json());
 
 dotenv.config();
