@@ -9,7 +9,7 @@ import userRoute from "./route/user.route.js";
 const app = express();
 
 app.use(cors({
-    origin: ['http://localhost:5174'], // Replace with your frontend URL
+    origin: ['http://localhost:5174','https://cloth-store-frontend.vercel.app/'], // Replace with your frontend URL
     methods: 'GET, POST, PUT, DELETE',
     credentials: true // Include this if cookies are involved
   }));
